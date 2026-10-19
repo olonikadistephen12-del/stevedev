@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Steve Dev — web developer building modern, responsive websites for brands and businesses." />
+  <title>Steve Dev | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* Steve Dev portfolio — edit the variables below to customize the theme. */
+:root{--bg:#080b12;--surface:#101620;--surface-2:#151e2b;--text:#f4f7fb;--muted:#9ba7b8;--accent:#65f5b5;--accent-2:#7aa7ff;--line:rgba(255,255,255,.09);--font:'DM Sans',sans-serif;--display:'Space Grotesk',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(1140px,calc(100% - 48px));margin:auto}.section{padding:112px 0;position:relative}.site-header{position:fixed;inset:0 0 auto;z-index:100;background:rgba(8,11,18,.8);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(18px)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 21px var(--display);letter-spacing:-.8px;display:inline-flex;align-items:center;gap:8px}.brand>span:last-child{color:var(--accent);margin-left:-8px}.brand-mark{color:var(--accent);font-size:17px;background:rgba(101,245,181,.1);border:1px solid rgba(101,245,181,.25);padding:4px 7px;border-radius:7px}.nav-links{display:flex;align-items:center;gap:34px}.nav-links>a{font-size:13px;color:#c0c8d4;transition:color .2s}.nav-links>a:hover{color:var(--accent)}.nav-links .nav-cta{border:1px solid rgba(101,245,181,.45);border-radius:8px;padding:10px 16px;color:var(--accent)}.nav-cta span,.button span{margin-left:10px}.menu-toggle{display:none;background:none;border:0;color:white}.hero{min-height:760px;padding-top:155px;padding-bottom:85px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 70% 45%,rgba(42,69,93,.15),transparent 42%),var(--bg)}.hero-grid{display:grid;grid-template-columns:1fr 1.02fr;align-items:center;gap:45px;position:relative;z-index:2}.eyebrow,.section-kicker{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--accent)}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 12px;border:1px solid rgba(101,245,181,.2);border-radius:50px;background:rgba(101,245,181,.04);margin-bottom:26px}.status-dot,.window-footer b{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}.intro{color:#c1c9d6;font-size:17px;margin-bottom:3px}.hero h1{font:700 clamp(48px,6vw,76px)/1.08 var(--display);letter-spacing:-4px}.gradient-text{background:linear-gradient(100deg,var(--accent),#8edfcf 45%,var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}.headline-light{font-size:.67em;letter-spacing:-2px;color:#e7ebf2}.hero-description{max-width:490px;color:var(--muted);font-size:15px;line-height:1.9;margin:24px 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:13px 19px;font-size:13px;font-weight:700;transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;border:1px solid transparent}.button:hover{transform:translateY(-3px)}.button-primary{background:var(--accent);color:#06140e;box-shadow:0 7px 28px rgba(101,245,181,.12)}.button-primary:hover{box-shadow:0 10px 35px rgba(101,245,181,.24)}.button-ghost{border-color:var(--line);color:#e2e7ef}.button-ghost:hover{border-color:rgba(101,245,181,.5)}.hero-meta{display:flex;align-items:center;gap:23px;margin-top:47px}.hero-meta div{display:flex;flex-direction:column;gap:1px}.hero-meta strong{font:600 20px var(--display)}.hero-meta span{font-size:10px;color:var(--muted)}.hero-meta>i{height:30px;width:1px;background:var(--line)}.hero-visual{position:relative;min-height:445px;display:flex;align-items:center;justify-content:center}.code-window{width:min(100%,450px);position:relative;z-index:2;border:1px solid rgba(151,178,201,.2);border-radius:14px;background:linear-gradient(145deg,#121c2a,#0d131e);box-shadow:0 35px 90px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.04);overflow:hidden;transform:perspective(1200px) rotateY(-5deg) rotateX(2deg)}.window-top{height:47px;display:flex;align-items:center;gap:14px;padding:0 17px;border-bottom:1px solid var(--line);color:#8190a2;font-size:10px}.window-dots{display:flex;gap:5px}.window-dots b{width:7px;height:7px;border-radius:50%;background:#fb6e6e}.window-dots b:nth-child(2){background:#f6c667}.window-dots b:nth-child(3){background:#5ce1a5}.window-menu{margin-left:auto;letter-spacing:2px}.code-content{padding:24px 20px 23px;font:12px/2.15 'Consolas',monospace;color:#dce7f3}.code-line{display:flex;gap:20px;white-space:nowrap}.line-number{color:#4b5b6d;min-width:13px;text-align:right;user-select:none}.code-line em{font-style:normal;color:#d99cff}.code-line i{font-style:normal;color:#a5e6bd}.code-line strong{color:#ffce7a}.indent{padding-left:18px}.indent2{padding-left:38px}.cursor{display:inline-block;width:6px;height:13px;background:var(--accent);vertical-align:middle;margin-left:5px;animation:blink 1s steps(2) infinite}.window-footer{display:flex;justify-content:space-between;padding:12px 17px;border-top:1px solid var(--line);font-size:9px;color:#78889a}.window-footer span:first-child{display:flex;align-items:center;gap:8px}.window-footer b{display:inline-block;width:5px;height:5px}.orbit{position:absolute;border:1px solid rgba(101,245,181,.13);border-radius:50%;width:390px;height:390px}.orbit-b{width:480px;height:480px;border-color:rgba(122,167,255,.1)}.floating-card{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;padding:11px 14px;background:rgba(19,27,39,.94);border:1px solid rgba(255,255,255,.1);border-radius:10px;box-shadow:0 12px 35px #0005;backdrop-filter:blur(12px)}.floating-card strong,.floating-card small{display:block}.floating-card strong{font-size:11px}.floating-card small{font-size:9px;color:var(--muted)}.float-icon{width:31px;height:31px;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:16px}.orange{background:#47271e;color:#ff8d57}.blue{background:#1b3154;color:#7ab7ff}.yellow{background:#443c1d;color:#f4d35e;font-size:11px}.float-html{top:46px;left:0}.float-css{right:-8px;top:148px}.float-js{left:15px;bottom:48px}.visual-caption{position:absolute;bottom:0;right:15px;display:flex;align-items:center;gap:9px;color:#637184;font-size:9px;letter-spacing:2px}.caption-line{width:28px;height:1px;background:var(--accent)}.hero-glow{position:absolute;width:350px;height:350px;border-radius:50%;filter:blur(100px);opacity:.08;pointer-events:none}.glow-one{background:var(--accent);top:20%;left:-180px}.glow-two{background:var(--accent-2);right:-180px;bottom:0}.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:2px;color:#657184;display:flex;align-items:center;gap:10px}.scroll-cue span{width:16px;height:25px;border:1px solid #526174;border-radius:12px;position:relative}.scroll-cue span:after{content:"";position:absolute;width:2px;height:5px;background:var(--accent);top:5px;left:6px;border-radius:3px;animation:scroll 1.5s infinite}.section-heading{margin-bottom:42px}.section-kicker{margin-bottom:17px}.section-heading h2,.contact-copy h2,.cta-box h2{font:600 clamp(32px,4.2vw,48px)/1.2 var(--display);letter-spacing:-1.8px}.muted{color:#778496}.about-section{background:#0b1018;border-top:1px solid #ffffff06;border-bottom:1px solid #ffffff06}.about-grid{display:grid;grid-template-columns:1fr .8fr;gap:90px;align-items:start}.about-text p{color:var(--muted);font-size:14px;margin-bottom:18px;max-width:540px;line-height:1.9}.about-text .large-copy{font:500 21px/1.65 var(--display);color:#e5eaf1}.text-link{display:inline-flex;gap:12px;align-items:center;color:var(--accent);font-size:12px;font-weight:700;margin-top:10px}.skills-panel{background:linear-gradient(145deg,#121a26,#0d131d);border:1px solid var(--line);border-radius:13px;padding:25px}.skills-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.5px;font-weight:700;margin-bottom:26px}.tiny-badge{font-size:8px;color:var(--accent);background:#65f5b512;padding:5px 8px;border-radius:4px;letter-spacing:1px}.skill{margin:20px 0}.skill>div:first-child{display:flex;justify-content:space-between;gap:12px;margin-bottom:9px;font-size:12px}.skill b{font-size:10px;color:#8290a2;font-weight:500}.skill-track{height:4px;background:#273241;border-radius:5px;overflow:hidden}.skill-track span{display:block;width:var(--level);height:100%;background:linear-gradient(90deg,var(--accent),#82cfff);border-radius:5px}.skill-note{font-size:10px;color:#718094;margin-top:25px}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service-card{position:relative;min-height:260px;padding:26px 25px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(150deg,#111925,#0c111a);transition:transform .25s,border-color .25s}.service-card:hover{transform:translateY(-6px);border-color:#65f5b54c}.service-number{position:absolute;right:22px;top:22px;color:#556276;font:12px var(--display)}.service-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;color:var(--accent);background:#65f5b512;border:1px solid #65f5b522;font-size:22px;margin-bottom:24px}.service-card h3{font:600 18px var(--display);margin-bottom:10px}.service-card p{font-size:12px;line-height:1.8;color:var(--muted)}.service-card>a{position:absolute;bottom:22px;right:23px;color:var(--accent);font-size:18px}.projects-section{background:#0b1018;border-top:1px solid #ffffff06}.projects-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:42px}.projects-heading .section-heading{margin-bottom:0}.projects-note{max-width:330px;font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:6px}.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project-card{min-width:0}.project-art{height:245px;overflow:hidden;border:1px solid var(--line);border-radius:11px;background:#121923;position:relative}.browser-bar{height:29px;background:#151d28;border-bottom:1px solid #ffffff0b;display:flex;align-items:center;gap:4px;padding:0 10px}.browser-bar i{width:5px;height:5px;background:#566273;border-radius:50%}.browser-bar span{font-size:7px;color:#8490a0;margin:auto}.mock-brand{position:relative;height:calc(100% - 29px);padding:25px 22px;background:#e8e7df;color:#232c29;overflow:hidden}.mock-brand small{font-size:7px;letter-spacing:2px}.mock-brand h3{font:700 38px/.95 var(--display);margin-top:25px;position:relative;z-index:1;letter-spacing:-2px}.mock-brand h3 em{font-family:Georgia,serif;font-weight:400;color:#527e68}.mock-button{font-size:7px;letter-spacing:1px;margin-top:19px;position:relative;z-index:1}.mock-circle{position:absolute;width:145px;height:145px;background:#a7b9a1;border-radius:50%;right:-12px;bottom:-35px;box-shadow:inset 20px 10px 0 #cad0bd}.project-art-two{background:#f0eee8}.shop-ui{padding:13px 15px;color:#28352d}.shop-nav{font:700 9px var(--display);display:flex;justify-content:space-between}.shop-nav span{font:6px var(--font);letter-spacing:.7px}.shop-title{font:18px/1.1 var(--display);margin:16px 0 12px;letter-spacing:-.7px}.shop-title b{color:#6d826b}.product-row{display:flex;gap:9px}.product{position:relative;width:50%;height:105px;background:#dedbd1;overflow:hidden}.product>span{position:absolute;top:7px;left:7px;font-size:6px;letter-spacing:.6px;color:#586456}.product-b{background:#d4d9cf}.vase{position:absolute;width:32px;height:57px;left:35px;bottom:0;background:linear-gradient(90deg,#8e9a82,#b6b7a2,#7c8973);border-radius:10px 10px 13px 13px}.vase:before{content:"";position:absolute;left:10px;top:-13px;width:12px;height:18px;background:#929b83;border-radius:4px 4px 0 0}.lamp{position:absolute;bottom:0;left:29px;width:42px;height:58px;border-bottom:5px solid #8c9a84}.lamp:before{content:"";position:absolute;top:13px;left:-5px;width:52px;height:25px;background:#8b9b83;border-radius:50% 50% 5px 5px}.lamp:after{content:"";position:absolute;top:36px;left:17px;width:9px;height:28px;background:#aeb8a5}.project-art-three{background:#111a27}.dash-ui{display:flex;height:calc(100% - 29px);color:#dce5ef}.dash-side{width:27%;padding:13px 8px;background:#0d1420;display:flex;flex-direction:column;gap:15px;font-size:6px;color:#8191a4}.dash-side b{font-size:8px;color:#75edbd;margin-bottom:6px}.dash-main{flex:1;padding:15px 12px}.dash-main>small{font-size:6px;color:#7c8da0;letter-spacing:1px}.dash-main h3{font:600 15px var(--display);margin:5px 0 1px}.dash-main p{font-size:7px;color:#8493a5}.dash-stats{display:flex;gap:8px;margin-top:15px}.dash-stats div{flex:1;padding:9px;background:#1a2635;border:1px solid #ffffff0b;border-radius:5px}.dash-stats small,.dash-stats b{display:block}.dash-stats small{font-size:6px;color:#93a1b1}.dash-stats b{font-size:15px;color:#73e9b7;margin-top:3px}.dash-chart{height:50px;margin-top:10px;display:flex;align-items:end;gap:7px;border-bottom:1px solid #344252}.dash-chart i{flex:1;height:30%;background:#4dc99d;border-radius:3px 3px 0 0;opacity:.7}.dash-chart i:nth-child(2){height:52%}.dash-chart i:nth-child(3){height:40%}.dash-chart i:nth-child(4){height:78%}.dash-chart i:nth-child(5){height:59%}.dash-chart i:nth-child(6){height:90%}.dash-chart i:nth-child(7){height:70%}.project-info{display:flex;align-items:center;justify-content:space-between;margin:17px 0 10px}.project-type{font-size:8px;color:var(--accent);letter-spacing:1.4px;font-weight:700;margin-bottom:4px}.project-info h3{font:600 17px var(--display)}.project-info>a{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;transition:all .2s}.project-info>a:hover{background:var(--accent);color:#07130d}.tag-row{display:flex;gap:7px;flex-wrap:wrap}.tag-row span{font-size:9px;color:#9aa7b8;padding:5px 9px;background:#141c28;border-radius:5px}.cta-section{padding:80px 0}.cta-box{position:relative;text-align:center;padding:70px 25px;border:1px solid rgba(101,245,181,.15);border-radius:18px;background:radial-gradient(ellipse at 50% 110%,rgba(101,245,181,.1),transparent 55%),linear-gradient(145deg,#111a25,#0c1119);overflow:hidden}.cta-box .section-kicker{position:relative}.cta-box h2{position:relative;font-size:clamp(34px,4.5vw,51px);margin:15px 0}.cta-box>p:not(.section-kicker){position:relative;color:var(--muted);font-size:13px;max-width:470px;margin:0 auto 25px}.cta-box .button{position:relative}.cta-orb{position:absolute;width:250px;height:250px;left:50%;top:-220px;transform:translateX(-50%);border-radius:50%;background:var(--accent);filter:blur(100px);opacity:.1}.contact-section{background:#0b1018;border-top:1px solid #ffffff06}.contact-grid{display:grid;grid-template-columns:.9fr 1fr;gap:85px;align-items:start}.contact-copy>p:not(.section-kicker){max-width:390px;color:var(--muted);font-size:13px;line-height:1.9;margin:22px 0 28px}.contact-detail{display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid var(--line);max-width:400px}.contact-icon{width:39px;height:39px;border:1px solid #65f5b526;background:#65f5b50b;color:var(--accent);border-radius:9px;display:grid;place-items:center}.contact-detail>span:nth-child(2){display:flex;flex-direction:column;gap:2px;min-width:0}.contact-detail small{font-size:8px;letter-spacing:1.2px;color:#7e8b9d}.contact-detail b{font-size:12px;font-weight:600;overflow-wrap:anywhere}.contact-arrow{margin-left:auto;color:var(--accent)}.contact-form{padding:28px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#121a26,#0d131d)}.form-heading{margin-bottom:22px}.form-heading h3{font:600 21px var(--display)}.form-heading p{font-size:11px;color:var(--muted);margin-top:5px}.contact-form label{display:block;font-size:11px;color:#c6cfdb;margin:15px 0 7px}.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:12px 13px;border-radius:7px;border:1px solid #263241;background:#0a1019;color:#eaf0f7;outline:none;font-size:12px;transition:border .2s}.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{border-color:#65f5b57a}.contact-form input::placeholder,.contact-form textarea::placeholder{color:#586678}.contact-form textarea{resize:vertical}.contact-form select:invalid{color:#68778a}.form-submit{width:100%;margin-top:20px;border:0}.form-note{font-size:9px;color:#7f8b9a;text-align:center;margin-top:12px}.footer{border-top:1px solid var(--line);padding:26px 0}.footer-inner{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.footer-inner>p{font-size:10px;color:#7f8b9b}.back-top{margin-left:auto;font-size:9px;letter-spacing:1px;color:var(--accent)}.footer-inner>small{width:100%;border-top:1px solid #ffffff08;padding-top:17px;color:#657184;font-size:10px}.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes blink{50%{opacity:0}}@keyframes scroll{0%{transform:translateY(0);opacity:1}100%{transform:translateY(8px);opacity:0}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:135px}.hero-copy{max-width:650px}.hero-visual{min-height:420px}.code-window{width:min(88%,450px)}.about-grid{gap:40px}.projects-grid{grid-template-columns:repeat(2,1fr)}.project-card:last-child{grid-column:1/-1;width:calc(50% - 10px)}.contact-grid{gap:40px}.float-css{right:0}}
+@media(max-width:640px){.container{width:min(100% - 34px,500px)}.section{padding:78px 0}.nav{height:68px}.menu-toggle{display:flex;flex-direction:column;gap:5px;padding:8px}.menu-toggle span{display:block;width:22px;height:2px;background:#eaf0f7;border-radius:2px}.nav-links{position:absolute;top:68px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 22px 20px;background:#0c111b;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-links>a{padding:13px 4px}.nav-links .nav-cta{margin-top:8px;text-align:center}.hero{padding-top:115px;padding-bottom:70px;min-height:0}.hero h1{font-size:clamp(46px,13vw,65px);letter-spacing:-2.8px}.headline-light{letter-spacing:-1.3px}.hero-description{font-size:13px}.hero-meta{gap:14px;margin-top:35px}.hero-meta strong{font-size:17px}.hero-meta span{font-size:9px}.hero-visual{min-height:350px;margin:0 -5px}.code-window{width:100%;transform:none}.code-content{padding:18px 12px;font-size:10px}.code-line{gap:13px}.indent{padding-left:12px}.indent2{padding-left:24px}.orbit{width:300px;height:300px}.orbit-b{width:350px;height:350px}.floating-card{padding:8px 10px;gap:7px}.float-icon{width:26px;height:26px}.floating-card strong{font-size:9px}.floating-card small{font-size:8px}.float-html{left:-4px;top:22px}.float-css{right:-4px;top:120px}.float-js{left:-3px;bottom:23px}.visual-caption{right:2px;font-size:7px}.scroll-cue{display:none}.section-heading{margin-bottom:30px}.section-heading h2,.contact-copy h2{font-size:34px;letter-spacing:-1.2px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:34px}.about-text .large-copy{font-size:19px}.skills-panel{padding:21px}.services-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:220px}.projects-heading{display:block}.projects-note{margin-top:20px}.projects-grid{grid-template-columns:1fr;gap:28px}.project-card:last-child{grid-column:auto;width:100%}.project-art{height:260px}.cta-section{padding:45px 0}.cta-box{padding:53px 17px}.cta-box h2{font-size:34px;letter-spacing:-1.3px}.contact-form{padding:21px 17px}.footer-inner{gap:14px}.footer-inner>p{order:3;width:100%}.back-top{font-size:8px}.footer-inner>small{margin-top:5px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Steve Dev home"><span class="brand-mark">&lt;/&gt;</span> Steve<span>Dev.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR NEW PROJECTS</div>
+          <p class="intro">Hello, I'm</p>
+          <h1>Steve <span class="gradient-text">Dev.</span><br><span class="headline-light">I build for the web.</span></h1>
+          <p class="hero-description">I'm a web developer who turns ideas into clean, responsive, and engaging digital experiences that help businesses grow.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="button button-ghost" href="#contact">Contact me</a></div>
+          <div class="hero-meta"><div><strong>01+</strong><span>Creative mindset</span></div><i></i><div><strong>100%</strong><span>Commitment</span></div><i></i><div><strong>∞</strong><span>Ideas to build</span></div></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="code-window">
+            <div class="window-top"><div class="window-dots"><b></b><b></b><b></b></div><span>developer.js</span><span class="window-menu">•••</span></div>
+            <div class="code-content">
+              <div class="code-line"><span class="line-number">01</span><span><em>const</em> developer = {</span></div>
+              <div class="code-line indent"><span class="line-number">02</span><span>name: <i>'Steve Dev'</i>,</span></div>
+              <div class="code-line indent"><span class="line-number">03</span><span>role: <i>'Web Developer'</i>,</span></div>
+              <div class="code-line indent"><span class="line-number">04</span><span>focus: [</span></div>
+              <div class="code-line indent2"><span class="line-number">05</span><span><i>'Creative design'</i>,</span></div>
+              <div class="code-line indent2"><span class="line-number">06</span><span><i>'Clean code'</i>,</span></div>
+              <div class="code-line indent2"><span class="line-number">07</span><span><i>'Great experience'</i></span></div>
+              <div class="code-line indent"><span class="line-number">08</span><span>],</span></div>
+              <div class="code-line indent"><span class="line-number">09</span><span>available: <strong>true</strong></span></div>
+              <div class="code-line"><span class="line-number">10</span><span>};</span></div>
+              <div class="code-line"><span class="line-number">11</span><span class="cursor-line"><em>buildSomethingAmazing</em>();<b class="cursor"></b></span></div>
+            </div>
+            <div class="window-footer"><span><b></b> All systems ready</span><span>UTF-8&nbsp; · &nbsp;JavaScript</span></div>
+          </div>
+          <div class="floating-card float-html"><span class="float-icon orange">5</span><div><strong>HTML5</strong><small>Structure</small></div></div>
+          <div class="floating-card float-css"><span class="float-icon blue">✳</span><div><strong>CSS3</strong><small>Visual design</small></div></div>
+          <div class="floating-card float-js"><span class="float-icon yellow">JS</span><div><strong>JavaScript</strong><small>Interactivity</small></div></div>
+          <div class="visual-caption"><span class="caption-line"></span><span>DESIGN. DEVELOP. DELIVER.</span></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">01 / ABOUT ME</p><h2>Good design catches attention.<br><span class="muted">Great development keeps it.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-text reveal"><p class="large-copy">I create digital experiences that look sharp, work smoothly, and make life easier for the people using them.</p><p>From landing pages to business websites, I care about the details: thoughtful layouts, fast performance, accessible interfaces, and a great experience on every screen.</p><p>I'm always learning, improving my craft, and looking for opportunities to turn real problems into useful web solutions.</p><a href="#contact" class="text-link">Have a project in mind? Let's talk <span>↗</span></a></div>
+          <div class="skills-panel reveal"><div class="skills-top"><span>MY TOOLKIT</span><span class="tiny-badge">CORE SKILLS</span></div>
+            <div class="skill"><div><span>HTML5</span><b>Structure</b></div><div class="skill-track"><span style="--level:92%"></span></div></div>
+            <div class="skill"><div><span>CSS3</span><b>Design & layout</b></div><div class="skill-track"><span style="--level:86%"></span></div></div>
+            <div class="skill"><div><span>JavaScript</span><b>Interactions</b></div><div class="skill-track"><span style="--level:72%"></span></div></div>
+            <div class="skill"><div><span>Responsive design</span><b>All screens</b></div><div class="skill-track"><span style="--level:88%"></span></div></div>
+            <p class="skill-note">Always growing. Always building.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">02 / WHAT I DO</p><h2>Solutions built around<br><span class="muted">your next big idea.</span></h2></div>
+        <div class="services-grid">
+          <article class="service-card reveal"><div class="service-number">01</div><div class="service-icon">⌘</div><h3>Website Development</h3><p>Modern, responsive websites built to represent your brand and work beautifully across devices.</p><a href="#contact" aria-label="Ask about website development">↗</a></article>
+          <article class="service-card reveal"><div class="service-number">02</div><div class="service-icon">◈</div><h3>UI & Web Design</h3><p>Clear layouts, considered typography, and intuitive interfaces that make your website easy to use.</p><a href="#contact" aria-label="Ask about web design">↗</a></article>
+          <article class="service-card reveal"><div class="service-number">03</div><div class="service-icon">⚡</div><h3>Website Refresh</h3><p>Improve an existing website with a cleaner look, better mobile experience, and more focused content.</p><a href="#contact" aria-label="Ask about a website refresh">↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-heading reveal"><div class="section-heading"><p class="section-kicker">03 / SELECTED WORK</p><h2>Some things I've<br><span class="muted">been building.</span></h2></div><p class="projects-note">A few example project concepts. Replace these cards with your real projects, screenshots, and links as you publish your work.</p></div>
+        <div class="projects-grid">
+          <article class="project-card reveal"><div class="project-art project-art-one"><div class="browser-bar"><i></i><i></i><i></i><span>brandstudio.site</span></div><div class="mock-brand"><small>STUDIO / 001</small><h3>Make your<br><em>mark.</em></h3><div class="mock-button">DISCOVER MORE ↗</div><div class="mock-circle"></div></div></div><div class="project-info"><div><p class="project-type">BUSINESS WEBSITE</p><h3>Brand Studio</h3></div><a href="#contact" aria-label="Discuss a business website project">↗</a></div><div class="tag-row"><span>HTML</span><span>CSS</span><span>Responsive</span></div></article>
+          <article class="project-card reveal"><div class="project-art project-art-two"><div class="browser-bar"><i></i><i></i><i></i><span>shopspace.site</span></div><div class="shop-ui"><div class="shop-nav">SPACE<span>SHOP&nbsp; &nbsp; ABOUT&nbsp; &nbsp; BAG (0)</span></div><div class="shop-title">Objects for<br><b>everyday living.</b></div><div class="product-row"><div class="product product-a"><span>01 / CERAMIC</span><div class="vase"></div></div><div class="product product-b"><span>02 / FORM</span><div class="lamp"></div></div></div></div></div><div class="project-info"><div><p class="project-type">E-COMMERCE CONCEPT</p><h3>Space Shop</h3></div><a href="#contact" aria-label="Discuss an ecommerce project">↗</a></div><div class="tag-row"><span>UI Design</span><span>JavaScript</span><span>Mobile-first</span></div></article>
+          <article class="project-card reveal"><div class="project-art project-art-three"><div class="browser-bar"><i></i><i></i><i></i><span>focusdash.site</span></div><div class="dash-ui"><div class="dash-side"><b>◈ focus</b><span>Overview</span><span>Projects</span><span>Calendar</span></div><div class="dash-main"><small>MONDAY, 09:41 AM</small><h3>Good morning 👋</h3><p>Here's your progress today.</p><div class="dash-stats"><div><small>Tasks done</small><b>08</b></div><div><small>Focus time</small><b>4.5h</b></div></div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div><div class="project-info"><div><p class="project-type">DASHBOARD CONCEPT</p><h3>Focus Dashboard</h3></div><a href="#contact" aria-label="Discuss a dashboard project">↗</a></div><div class="tag-row"><span>JavaScript</span><span>CSS Grid</span><span>UI</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box reveal"><div class="cta-orb"></div><p class="section-kicker">HAVE A PROJECT?</p><h2>Let's build something<br><span class="gradient-text">worth talking about.</span></h2><p>Tell me what you're working on. Let's turn the idea into a website that works for you.</p><a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><p class="section-kicker">04 / GET IN TOUCH</p><h2>Have an idea?<br><span class="muted">I'm all ears.</span></h2><p>Need a website for your business, brand, or next big idea? Reach out and let's discuss how I can help.</p><a class="contact-detail" href="mailto:olonikadistephen@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL ME</small><b>olonikadistephen@gmail.com</b></span><span class="contact-arrow">↗</span></a><a class="contact-detail" id="whatsappLink" href="https://wa.me/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◉</span><span><small>CHAT ON WHATSAPP</small><b>Let's talk about your project</b></span><span class="contact-arrow">↗</span></a></div>
+        <form class="contact-form reveal" id="contactForm"><div class="form-heading"><h3>Send a message</h3><p>Fill in the details and open a ready-to-send WhatsApp message.</p></div><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Alex Johnson" required><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required><label for="project">What do you need?</label><select id="project" name="project" required><option value="" disabled selected>Select a service</option><option>Business website</option><option>Portfolio website</option><option>E-commerce website</option><option>Website redesign</option><option>Other project</option></select><label for="message">Tell me about your project</label><textarea id="message" name="message" rows="4" placeholder="A few details about your idea..." required></textarea><button class="button button-primary form-submit" type="submit">Prepare WhatsApp message <span>↗</span></button><p class="form-note">This form opens WhatsApp; it does not send data to a server.</p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> Steve<span>Dev.</span></a><p>Designed with intent. Built with care.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> Steve Dev. All rights reserved.</small></div></footer>
+  <script>
+// Steve Dev portfolio interactions
+const menuToggle = document.querySelector('#menuToggle');
+const navLinks = document.querySelector('#navLinks');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+});
+
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation');
+  });
+});
+
+document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Reveal sections as they enter the viewport.
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        currentObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
+
+// IMPORTANT: Replace this placeholder with your WhatsApp number including country code.
+// Nigeria example format: 2348012345678 (no +, spaces, or leading zero).
+const WHATSAPP_NUMBER = '2348012345678';
+const whatsappLink = document.querySelector('#whatsappLink');
+whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+document.querySelector('#contactForm').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.querySelector('#name').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const project = document.querySelector('#project').value;
+  const message = document.querySelector('#message').value.trim();
+
+  const text = [
+    'Hello Steve Dev! I would like to discuss a project.',
+    '',
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Service: ${project}`,
+    `Project details: ${message}`
+  ].join('\n');
+
+  if (WHATSAPP_NUMBER === '2348012345678') {
+    const continueAnyway = confirm('Please replace the sample WhatsApp number in script.js with your own number before sending. Open WhatsApp with the current sample number anyway?');
+    if (!continueAnyway) return;
+  }
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+});
+
+  </script>
+</body>
+</html>
